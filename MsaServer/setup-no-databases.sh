@@ -15,6 +15,7 @@ PATH="${SCRIPT_DIR}/mmseqs/bin:$PATH"
 # make sure the API server is checked out
 wget -q https://github.com/soedinglab/MMseqs2-App/archive/refs/tags/v8-c4b9644.tar.gz
 tar -xzf v8-c4b9644.tar.gz 
+rm  v8-c4b9644.tar.gz
 mv MMseqs2-App-8-c4b9644 mmseqs-server
 
 # compile the api server
