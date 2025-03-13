@@ -3,7 +3,7 @@
     "verbose": true,
     "server" : {
         // you might want to change the port
-        "address"    : "127.0.0.1:80",
+        "address"    : "127.0.0.1:8080",
         "dbmanagment": false,
         "cors"       : true
     },
@@ -15,12 +15,12 @@
             // disable parallel stage execution if you plan to use exactly #workers of CPU-cores
             // this will ~2-3x speedup the execution, while requiring more cores
             "parallelstages": true,
-            "uniref"        : "~/databases/uniref30_2202_db",
-            "pdb"           : "~/databases/pdb100_230517",
-            "environmental" : "~/databases/colabfold_envdb_202108_db",
-            "pdb70"         : "~/databases/pdb100",
-            "pdbdivided"    : "~/databases/pdb/divided",
-            "pdbobsolete"   : "~/databases/pdb/obsolete"
+            "uniref"        : "MsaServer/databases/uniref30_2302_db",
+            "pdb"           : "MsaServer/databases/pdb100_230517",
+            "environmental" : "MsaServer/databases/colabfold_envdb_202108_db",
+            "pdb70"         : "MsaServer/databases/pdb100",
+            "pdbdivided"    : "MsaServer/databases/pdb/divided",
+            "pdbobsolete"   : "MsaServer/databases/pdb/obsolete"
         },
         "mmseqs"       : "~/mmseqs/bin/mmseqs"
     },
