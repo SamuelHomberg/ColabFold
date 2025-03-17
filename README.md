@@ -1,5 +1,8 @@
 # ColabFold - v1.5.5
 
+> [!IMPORTANT]
+> This forked version of the original [ColabFold Github](https://github.com/sokrypton/ColabFold) is used to build a docker/singularity container to run the ColabFold API server locally. More information [here](MsaServer/README.md).
+
 For details of what was changed in v1.5, see [change log](https://github.com/sokrypton/ColabFold/wiki/v1.5.0)!
 
 <p align="center"><img src="https://github.com/sokrypton/ColabFold/raw/main/.github/ColabFold_Marv_Logo.png" height="250"/></p>

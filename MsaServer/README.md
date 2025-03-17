@@ -1,3 +1,14 @@
+# A containerized ColabFold API server
+
+This forked version of the original [ColabFold Github](https://github.com/sokrypton/ColabFold) is used to build a docker/singularity container to run the ColabFold API server locally. You can build the container with `docker build -t msa_server -f Dockerfile .` or get it from docker hub with `docker pull samuelhomberg/msa_server` or `singularity pull docker://samuelhomberg/msa_server`, respectively. 
+
+> [!Note]
+> The databases have to be installed seperately with the `setup-databases.sh` script. Note that this has not been thoroughly tested. Currently this made it also necessary to update the config to the newer uniref30_2302 ([97e2cc9](https://github.com/SamuelHomberg/ColabFold/commit/97e2cc9d546ab5cdc64bd788f95bd1af0051644b)).
+
+---
+
+# ***Previous instructions***
+
 # Setting up your local ColabFold API server
 
 Here you will find two examples of how to setup your own API server on a Linux machine.
