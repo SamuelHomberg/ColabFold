@@ -10,7 +10,10 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # install go
-RUN rm -rf /usr/local/go && tar -C /usr/local -xzf go1.24.1.linux-amd64.tar.gz 
+RUN wget https://go.dev/dl/go1.24.1.linux-amd64.tar.gz \
+    && rm -rf /usr/local/go \
+    && tar -C /usr/local -xzf go1.24.1.linux-amd64.tar.gz \
+    && rm -rf go1.24.1.linux-amd64.tar.gz
 ENV PATH="$PATH:/usr/local/go/bin"
 
 # download colabfold fork
@@ -24,5 +27,5 @@ WORKDIR /MsaServer
 RUN ./setup-no-databases.sh
 
 # entrypoint?
-ENTRYPOINT ["start-local.sh", "config.json"]
+ENTRYPOINT ["./start-local.sh", "config.json"]
 
